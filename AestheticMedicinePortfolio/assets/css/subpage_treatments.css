@@ -1,0 +1,254 @@
+:root{
+  --white:#FFFFFF;
+  --grayWhite:#EFEFEF;
+  --darkWhite:#F2F2F2;
+  --darkBg:#0D0D0D;
+  --cyklamen:#F21D81;
+  --darkCyklamen:#8C114A;
+  --darkText:#9B9BA0;
+  --black:#000000;
+}
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  width:100%;
+  height:auto;
+  margin:0;
+  background-color:var(--darkBg);
+  font-family:'Montserrat',sans-serif;
+  font-size:16px;
+  font-weight:400;
+  color:var(--white);
+}
+h1{
+  font-size:2.7em;
+  font-weight:500;
+  color:var(--white);
+  text-align:center;
+}
+h2{
+  font-size:2em;
+  font-weight:600;
+  color:var(--cyklamen);
+  text-align:center;
+  padding:1em 0 1em 0;
+  letter-spacing:0.02em;
+}
+h3{
+  font-size:1.125em;
+  font-weight:600;
+  color:var(--cyklamen);
+  letter-spacing:0.0625em;
+}
+h4{
+  font-size:1em;
+  font-weight:600;
+  color:var(--cyklamen);
+  letter-spacing:0;
+}
+p{
+  font-size:1.125em;
+}
+a{
+  font-size:1.125em;
+  color:var(--cyklamen);
+  text-decoration:none;
+}
+.error{
+  text-align:center;
+  color:#DB2D01;
+}
+.importantText{
+  color:var(--white);
+}
+section{
+  width:100%;
+  height:auto;
+}
+/*Small Devices*/
+nav{
+  width:100%;
+  height:auto;
+  padding:15px 0 15px 0;
+  margin:0;
+  position:fixed;
+  top:0;
+  text-align:center;
+  border-bottom:3px var(--cyklamen) solid;
+  background-color:var(--darkBg);
+}
+nav a{
+  font-size:1.5em;
+  letter-spacing:0.1em;
+  color:var(--white);
+  transition:0.1s;
+}
+nav a:hover{
+  color:var(--cyklamen);
+  transition:0.1s;
+}
+.titleSection{
+  text-align:center;
+}
+.titleSection h1{
+  padding:65px 0 0 0;
+}
+.titleSection h2{
+  padding:10px 0 10px 0;
+}
+.main h1{
+  padding-top:45px;
+}
+.descriptionText{
+  width:90%;
+  height:auto;
+  margin:1em 5% 1em 5%;
+}
+.descriptionText a{
+  transition:0.1s;
+}
+.descriptionText a:hover{
+  color:var(--white);
+  transition:0.2s;
+}
+.descriptionImg{
+  width:90%;
+  height:auto;
+  margin:1em 5% 1em 5%;
+}
+.descriptionImg img{
+  width:100%;
+  height:auto;
+  object-fit:cover;
+}
+/*Footer*/
+footer{
+  width:100%;
+  height:auto;
+  text-align:center;
+}
+.flexBox{
+  width:100%;
+  height:auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+footer .f-col-3{
+  width:100%;
+  margin:2em 0 2em 0;
+}
+footer h3{
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+  letter-spacing:0.125px;
+}
+footer .f-col-3 a, p{
+  display:block;
+  padding:0.5em 0 0.25em 0;
+  color:var(--white);
+  transition:0.2s;
+}
+footer .f-col-3 a:hover{
+  color:var(--cyklamen);
+  transition:0.2s;
+}
+footer .sm a{
+  display:inline-block;
+  font-size:1.5em;
+  padding:0.5em 0.2em 0.5em 0.2em;
+}
+footer .f-col-1{
+  width:100%;
+  margin:2em 0 2em 0;
+  color:var(--darkText);
+  text-align:center;
+  line-height:2em;
+}
+@media only screen and (min-width:500px){
+
+}
+/*Medium Devices*/
+@media only screen and (min-width:600px) {
+  /*Footer*/
+  footer .f-col-3{
+    width:40%;
+    margin:2em 1em 3em 1em;
+  }
+}
+@media only screen and (min-width:800px) {
+  /*Description Section*/
+  section:nth-of-type(even) .descriptionText {
+    width:calc(45% - 0.7em);
+    margin:1em 5% 0.5em 0.7em;
+    float:left;
+  }
+  section:nth-of-type(even) .descriptionImg{
+    width:45%;
+    margin:1em 0 0.5em 5%;
+    float:left;
+  }
+  section:nth-of-type(odd) .descriptionText {
+    width:calc(45% - 0.7em);
+    margin:1em 0.7em 0.5em 5%;
+    float:left;
+  }
+  section:nth-of-type(odd) .descriptionImg{
+    width:45%;
+    margin:1em 5% 0.5em 0;
+    float:right;
+  }
+  /*Footer*/
+  footer .f-col-3{
+    width:26%;
+    margin:0;
+    text-align:left;
+  }
+}
+@media only screen and (min-width:1120px){  
+  /*Footer*/
+  footer{
+    margin-top:2em;
+  }
+  .flexBox{
+    width:1120px;
+    margin:0 auto;
+  }
+  footer .f-col-1{
+    margin:4em 0 2em 0;
+  }
+  footer h3{
+    padding-top:1em;
+    padding-bottom:1em;
+  }
+  footer .f-col-3 a, p{
+    padding:0.5em 0 0.5em 0;
+  }
+  .flexBox i{
+    padding:0 0.8em 0 0;
+  }
+}
+/*Large Devices*/
+@media only screen and (min-width:1200px) {
+  /*Description Section*/
+  section{
+    min-width:1000px;
+    max-width:1000px;
+    margin:auto;
+  }
+}
+@media only screen and (min-width:1350px) { 
+
+}
+@media only screen and (min-width:1400px){
+
+}
+/*V-Large Devices*/
+@media only screen and (min-width:1920px) {
+  /*Footer*/
+  .flexBox{
+    width:1400px;
+  }
+}

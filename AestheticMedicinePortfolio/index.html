@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Doktor Nawacka</title>
+
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="/assets/fav/" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/assets/fav/" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/assets/fav/" sizes="192x192" />
+  <link rel="icon" type="image/png" href="/assets/fav/" sizes="512x512" />
+  
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="Author" content="Jakub Miros">
+
+  <!--CSS-->
+  <link href="assets/css/master.css" rel="stylesheet">
+  <!--JS-->
+  <script src="assets/js/main.js" defer></script>
+  <!--<script src="assets/js/data.js" defer>
+  </script><script src="assets/js/language.js" defer></script> - working on a final website -->
+  <script src="assets/js/slider.js" defer></script>
+  <script src="assets/js/emailAlert.js" async></script>
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!--FONTELLO-->
+  <link href="assets/fontello/css/fontello.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="EmailAlert()">
+  <section>
+    <div class="HomePage">
+      <div class="h-background">
+        <button id="changeLangButton" class="h-language" onclick="changeLanguage()">EN</button>
+        <div class="h-title">
+          <div class="h-title-1">
+            <h1 langData="title_1_1">Mały gabinet.</h1>
+          </div>
+          <div class="h-title-2">
+            <span langData="title_2_1">Duże możliwości.</span>
+            <span langData="title_2_2">Otwarty na róźnorodność.</span>
+            <span langData="title_2_3">Jakość i bezpieczeństwo.</span>
+            <span langData="title_2_4">Harmonia duszy i ciała.</span>
+            <span langData="title_2_5">Twoja definicja piękna.</span>
+          </div>
+        </div>
+        <!--window.open('https://drnawacka.com/blog','_blank')-->
+        <button class="h-button-blog" onclick="window.open('blog.html','blank')">Blog</button>
+        <span class="h-mouseAnimation">
+          <span class="h-mouseAnimation-dash"></span>
+        </span>
+      </div>
+    </div>
+    <div class="MyPhilosophy">
+      <h2 langData="philosophy_title">Moja Filozofia</h2>
+      <img src="assets/img/backgrounds/hallHairmedFinal.webp" alt="dr Nawacka, Nawacka, Dorota Nawacka, Profilowe, Doktor Nawacka, Medycyna estetyczna, Estetyczna, Piękno, Piękny, Piękna">
+      <div class="p-col-2">
+        <span class="importantText" langData="philosophy_span1">Piękno to dla mnie harmonia wyglądu i charakteru.</span>
+        <p langData="philosophy_p1">
+          Lepszy wygląd bez widocznej ingerencji. Jako takie piękno musi być dopasowane do konkretnej osoby.
+        </p>
+        <span class="importantText" langData="philosophy_span2">Nie narzucam jednego wzorca urody.</span>
+        <p langData="philosophy_p2">
+          Wierzę, że różnorodność, w tym płci, wieku, wagi, rasy czy orientacji seksualnej czyni nas wyjątkowymi. Medycyna estetyczna powinna to uszanować. Naturalności nie można mylić z zaniedbaniem.
+        </p>
+        <span class="importantText" langData="philosophy_span3">Jestem doktorem nauk medycznych, poza medycyną estetyczną zajmuję się interną.</span>
+        <p langData="philosophy_p3">
+          Cenię bezpieczeństwo, holistyczne podejście i jakość. Dlatego używam wyłącznie produktów certyfikowanych w Unii Europejskiej.
+        </p>
+      </div>
+      <!--<div class="p-col-2">
+        <ul>
+          <li><span class="dot"></span>Punkt Pierwszy</li>
+          <li><span class="dot"></span>Punkt Drugi</li>
+          <li><span class="dot"></span>Punkt Trzeci</li>
+          <li><span class="dot"></span>Punkt Czwarty</li>
+          <li><span class="dot"></span>Punkt Piąty</li>
+        </ul>
+      </div>-->
+      <div style="clear:both;"></div>
+    </div>
+    <div class="MedProc">
+      <h2 langData="medProc_h2">Nad czym chcesz popracować?</h2>
+      <div class="m-treatments">
+        <div class="m-treatments-names" langData="medProc_1"><h3>Zmarszczki</h3></div>
+        <!--<div class="m-treatments-names" onclick="location.reload();location.href='Treatments/1.html'"><h3>Zmarszczki</h3></div>-->
+        <div class="m-treatments-names" langData="medProc_2"><h3>Wiotkość skóry</h3></div>
+        <div class="m-treatments-names" langData="medProc_3"><h3>Owal twarzy</h3></div>
+        <div class="m-treatments-names" langData="medProc_4"><h3>Smutne oczy</h3></div>
+        <div class="m-treatments-names" langData="medProc_5"><h3>Przebarwienia</h3></div>
+        <div class="m-treatments-names" langData="medProc_6"><h3>Kształt ust</h3></div>
+        <div class="m-treatments-names" langData="medProc_7"><h3>Odmładzanie szyi,<br>dłoni i uszu</h3></div>
+        <div class="m-treatments-names" langData="medProc_8"><h3>Leczenie nadpotliwości<br>i bruksizmu</h3></div>
+        <div class="m-treatments-names" langData="medProc_9"><h3>Prewencja</h3></div>
+        <div class="m-treatments-names" langData="medProc_10"><h3>Kompleksowe terapie autorskie</h3></div>
+      </div>
+      <div class="medical-pres">
+        <div class="medical-pres-content">
+          <h3 langData="medProc_h3">Nie wiesz jak to nazwać?</h3>
+          <h3 style="color:#9B9BA0;" langData="medProc_h3_2">Zapraszam na konsultację.</h3>
+          <div class="buttons-container">
+            <button class="" langData="medProc_button1">Umów wizytę</button>
+            <button class="" langData="medProc_button2">Cennik</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Quality">
+      <h2>Korzystamy ze środków najwyższej jakości</h2>
+      <p>Sprowadzanych tylko od producentów spełniajacych wyśrubowane normy Unii Europejskiej</p>
+      <div class="Quality-content">
+        <img src="assets/img/products/galderma.svg" alt="logo galderma, Galderma, aestetics medicine">
+        <img src="assets/img/products/neauvia_2.jpg" alt="logo neauvia, Neauvia">
+        <img src="assets/img/products/fillmed.png" alt="logo fillmed, Fillmed"><!--azzalure-->
+        <img src="assets/img/products/wiqo.jpg" alt="logo Wiqo, Wiqo">
+      </div>
+    </div>
+    <div class="MyWorks">
+      <h2>Efekty mojej pracy</h2>
+      <div class="slider" id="slider">
+        <div class="inner-slider" id="innerSlider">
+          <div class="slider-element">
+            <img src="assets/img/backgrounds/2.jpg" alt="">
+            <h3>Tytuł wykonanego zabiegu 1</h3>
+            <p>Opis opis <br/>Opis opis dużo więcej teksu!!! i tu może też tekst.</p>
+          </div>
+          <div class="slider-element">
+            <img src="assets/img/backgrounds/2.jpg" alt="">
+            <h3>Tytuł wykonanego zabiegu 2</h3>
+            <p>Opis opis <br/>Opis opis</p>
+          </div>
+          <div class="slider-element">
+            <img src="assets/img/backgrounds/2.jpg" alt="">
+            <h3>Tytuł wykonanego zabiegu 3</h3>
+            <p>Opis opis <br/>Opis opis</p>
+          </div>
+          <div class="slider-element">
+            <img src="assets/img/backgrounds/2.jpg" alt="">
+            <h3>Tytuł wykonanego zabiegu 4</h3>
+            <p>Opis opis <br/>Opis opis</p>
+          </div>
+          <div class="slider-element">
+            <img src="assets/img/backgrounds/2.jpg" alt="">
+            <h3>Tytuł wykonanego zabiegu 5</h3>
+            <p>Opis opis <br/>Opis opis</p>
+          </div>
+          <div class="slider-element">
+            <img src="assets/img/backgrounds/2.jpg" alt="">
+            <h3>Tytuł wykonanego zabiegu 6</h3>
+            <p>Opis opis <br/>Opis opis</p>
+          </div>
+          <div class="slider-element">
+            <img src="assets/img/backgrounds/2.jpg" alt="">
+            <h3>Tytuł wykonanego zabiegu 7</h3>
+            <p>Opis opis <br/>Opis opis</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider-dots">
+        <span class="slider-dot" onclick="clickDot(1)"></span>
+        <span class="slider-dot" onclick="clickDot(2)"></span>
+        <span class="slider-dot" onclick="clickDot(3)"></span>
+        <span class="slider-dot slider-dot-focus" onclick="clickDot(4)"></span>
+        <span class="slider-dot" onclick="clickDot(5)"></span>
+        <span class="slider-dot" onclick="clickDot(6)"></span>
+        <span class="slider-dot" onclick="clickDot(7)"></span>
+      </div>
+    </div>
+    <div class="Opinions">
+      <h2>Opinie</h2>
+      <div class="o-content">
+        <!--Max 150 znaków-->
+        <div class="o-circle">
+          <h3 class="o-name">Jakub</h3>
+          <p class="o-opinion">Jestem bardzo zadowolony z efektów Pani Doroty Nawackiej! Moje zmarszczki odeszły wraz z niemiłymi wspomnieniami! Profesjonalizm już od progu gabinetu, polecam!</p>
+          <p class="o-icon"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-half-alt"></i></p>
+        </div>
+        <div class="o-circle">
+          <h3 class="o-name">Jakub</h3>
+          <p class="o-opinion">Nic dodać, nic ująć!</p>
+          <p class="o-icon"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></p>
+        </div>
+        <div class="o-circle">
+          <h3 class="o-name">Jakub</h3>
+          <p class="o-opinion">Profesjonalizm idzie u dr Nawackiej w parze z dokładnością. Dokładne wytłumaczenie kolejnych etapów zabiegu zawsze mnie uspokajało przed podjęciem jakichkolwiek decyzji.</p>
+          <p class="o-icon"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i></p>
+        </div>
+        <div class="o-circle">
+          <h3 class="o-name">Jakub</h3>
+          <p class="o-opinion">Jestem bardzo zadowolony z efektów Pani Doroty Nawackiej! Moje zmarszczki odeszły wraz z niemiłymi wspomnieniami! Profesjonalizm już od progu gabinetu, polecam :)</p>
+          <p class="o-icon"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-half-alt"></i></p>
+        </div>
+        <div class="o-circle">
+          <h3 class="o-name">Jakub1</h3>
+          <p class="o-opinion">Jestem bardzo zadowolony z efektów Pani Doroty Nawackiej! Moje zmarszczki odeszły wraz z niemiłymi wspomnieniami! Profesjonalizm już od progu gabinetu, polecam :)</p>
+          <p class="o-icon"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></p>
+        </div>
+        <div class="o-circle">
+          <h3 class="o-name">Jakub2</h3>
+          <p class="o-opinion">Jestem bardzo zadowolony z efektów Pani Doroty Nawackiej! Moje zmarszczki odeszły wraz z niemiłymi wspomnieniami! Profesjonalizm już od progu gabinetu, polecam :)</p>
+          <p class="o-icon"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i></p>
+        </div>
+        <div class="o-circle">
+          <h3 class="o-name">Jakub3</h3>
+          <p class="o-opinion">Jestem bardzo zadowolony z efektów Pani Doroty Nawackiej! Moje zmarszczki odeszły wraz z niemiłymi wspomnieniami! Profesjonalizm już od progu gabinetu, polecam :)</p>
+          <p class="o-icon"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></p>
+        </div>
+        <div class="o-circle">
+          <h3 class="o-name">Jakub4</h3>
+          <p class="o-opinion">Jestem bardzo zadowolony z efektów Pani Doroty Nawackiej! Moje zmarszczki odeszły wraz z niemiłymi wspomnieniami! Profesjonalizm już od progu gabinetu, polecam :)</p>
+          <p class="o-icon"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i></p>
+        </div>
+      </div>
+      <button class="o-showMore" onclick="showMoreOpinion()">Pokaż więcej</button>
+    </div>
+    <div class="Contact">
+      <div class="c-box">
+        <div class="c-infoForm">
+          <h2>Skontaktuj się z nami już teraz</h2>
+          <div class="c-contact">
+            <h4>Telefon</h4>
+            <a href="tel:+48512302955"><p>+48 123 456 789</p></a>
+          </div>
+          <div class="c-contact">
+            <h4>Email</h4>
+            <a href="mailto:kontakt@drnawacka.com"><p>kontakt@drnawacka.com</p></a>
+          </div>
+          <div class="c-contact">
+            <h3>Na miejscu</h3>
+            <a href="https://google.com" target="blank"><p>Ulica Jana Pawła 2<br/>21/37<br/>02-900 Warszawa</p></a>
+            <button class="c-map-button" onclick="window.open('https://www.google.com/maps/place/Spektrum+Tower/@52.2347457,20.9993095,19.5z/','_blank')">Otwórz mapę</button>
+          </div>
+          <div style="clear:both;"></div>
+          <div id="contact" class="c-form">
+            <h3>Lub przez Formularz</h3>
+            <form onsubmit="return validateForm();" action="assets/sendingEmailPHP/sendMessage.php" method="POST">
+              <input id="Name" name="Name" type="text" placeholder="Name" required>
+              <input id="Email" name="Email" type="email" placeholder="Email" required>
+              <input id="Title" name="Title" type="text" placeholder="Title">
+              <textarea id="Message" name="Message" type="text" placeholder="Message" required></textarea>
+              <p id="ErrorMessage" class="error"></p>
+              <input id="Submit" type="submit" placeholder="Wyślij">
+            </form>
+          </div>
+        </div>
+        <div class="c-img">
+          <iframe style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ9RbE3IjMHkcRVY1IncXSWSs&key=AIzaSyAdJk51E5FCW2FtWWrWWnwl4xgjPS5Bu1I"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="c-border-bottom"></div>
+  </section>
+  <footer>
+    <div class="flexBox">
+      <div class="f-col-3">
+        <h3>Polecam</h3>
+          <a href="#">Blog</a>
+      </div>
+      <div class="f-col-3">
+        <h3>Informacje</h3>
+          <a href="#">Cookies</a>
+          <a href="#">Info</a>
+      </div>
+      <div class="f-col-3 sm">
+        <h3>Sprawdź nasze social media</h3>
+          <a href="#"><i class="icon-facebook-rect"></i></a>
+          <a href="#"><i class="icon-instagram"></i></a>
+          <a href="#"><i class="icon-youtube-play"></i></a>
+          <a href="#"><i class="icon-pinterest-squared"></i></a>
+        <h3>Znajdź nas</h3>
+          <p>ul. Jana Pawła 2</p>
+          <p>21/37</p>
+          <p>02-000 Warszawa</p>
+      </div>
+    </div>
+    <div class="f-col-1">
+      <p><span id="actual_year"></span>&copy dr n.med. Dorota Nawacka</p>
+      <p>Designed by <a href="https://jakubmiros.com" target="_blank">Jakub Miros</a></p>
+    </div>
+  </footer>
+</body>
+<script>
+  document.getElementById("actual_year").innerHTML = new Date().getFullYear();
+</script>
+</html>
